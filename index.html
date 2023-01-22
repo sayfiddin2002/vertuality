@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./loader/loader.css">
+    <title>Project</title>
+</head>
+
+
+<body>
+
+     <div class="loder">
+        <div class="center">
+            <div class="loader">
+                <div class="circle--center">
+                    <div class="text">0%</div>
+                </div>
+                <div class="circle circle--1"></div>
+                <div class="circle circle--2"></div>
+                <div class="circle circle--3"></div>
+                <div class="circle circle--4"></div>
+                <div class="circle circle--5"></div>
+                <div class="circle circle--6"></div>
+                <div class="circle circle--7"></div>
+            </div>
+        </div>
+
+        <svg>
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"></feColorMatrix>
+                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                </filter>
+            </defs>
+        </svg>
+    </div>
+
+    <div class="katta">
+        <div class="container">
+
+            <div class="wrapper">
+                <div class="for-navbar">
+                    <div class="navbar">
+                        <div class="my">
+                            <div class="logo">
+                                <img src="./img/Vector.png" alt="error">
+                                <span>Zone.</span>
+                            </div>
+                            <i class="fas fa-bars" id="myMenuIcon"></i>
+                        </div>
+
+                        <ul id="myList">
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#service">Service</a>
+                            </li>
+                            <li>
+                                <a href="#pricing">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#block">Blog</a>
+                            </li>
+                            <button id="btnContact"><a href="#contact">Contact Us</a></button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" id="home" class="section-1">
+                <div class="item-1">
+                    <div class="item1-1">
+                        <h1>
+                            Virtual Reality <br> Business Solutions
+                        </h1>
+                    </div>
+                    <p>
+                        We have over 15 year exprience in business consultting arena. We have over <br> 15 year
+                        exprience in
+                        business consultting arena and artficial intelligence.
+                    </p>
+                    <div class="item1-2">
+                        <button class="btn2">Join Us</button>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <img src="./img/Saly.png" alt="Error">
+                </div>
+            </div>
+
+            <div id="service" class="section-2">
+                <div data-aos="fade-up" class="section2-2">
+                    <h1>Our Service </h1>
+                    <p>
+                        We turn information into actionable insights We work to understand your issues <br>
+                        and are driven to ask better questions in the pursuit of making work.
+                    </p>
+                </div>
+                <div class="section2-3"></div>
+            </div>
+
+            <div data-aos="fade-up" id="about" class="section-3">
+                <div class="section3-1">
+                    <img src="./img/huk.png" alt="">
+                </div>
+                <div class="section3-2">
+                    <h2>
+                        We complete every projects
+                        extra care as customer need
+                    </h2>
+                    <p>
+                        Eaque. In laboriosam, placeat harum nostrum nesciunt amet architecto dolor ratione esse aliquid,
+                        nobis
+                        adipisci quis at atque, quasi veritatis quae ea qui libero dicta? Praesentium delectus id sint
+                        eaque
+                        laudantium harum iure officiis quasi doloremque fugiat tempora, expedita necessitatibus
+                        voluptatum minus
+                        odio, dignissimos fuga quae molestias omnis, corporis soluta perspiciatis. Sit obcaecati hic
+                        ipsam
+                        praesentium atque nulla perferendis, reprehenderit quibusdam quam 
+                    </p>
+                    <button class="btn3">Read more</button>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" id="pricing" class="section-4">
+                <div class="section4-2">
+                    <h2>
+                        We complete every projects
+                        extra care as customer need
+                    </h2>
+                    <p>
+                        Nisi nihil magnam quis, ullam iure aliquam ipsam recusandae? Doloribus, iure distinctio nulla
+                        quis sequi
+                        reprehenderit aut illo. Quis aut in, consequuntur voluptates quod fuga, distinctio commodi
+                        tenetur, amet
+                        nesciunt tempore ipsam asperiores quas eos ipsum corporis corrupti voluptatum eveniet quaerat!
+                        Labore
+                        consequuntur laborum non ex eius at, quaerat, tenetur odio harum commodi libero 
+                        
+                    </p>
+                    <button class="btn3">Read more</button>
+                </div>
+                <div class="section4-1">
+                    <img src="./img/sun.png" alt="">
+                </div>
+            </div>
+
+            <div id="block" class="section-5">
+                <div data-aos="fade-up" class="section5-1">
+                    <h2>
+                        Met Our Team
+                    </h2>
+                    <p>
+                        Repellat fugit, blanditiis nulla excepturi repudiandae distinctio ullam
+                        eaque <br> placeat harum nostrum nesciunt amet architecto dolor ratione esse
+                        aliquid, nobis
+                    </p>
+                </div>
+                <div class="section5-2"></div>
+            </div>
+
+            <div id="contact" data-aos="fade-up" class="section-6">
+                <h2>
+                    Subscribe to get the Latest News
+                </h2>
+                <p>
+                    We recommended you to subscribe to our newspaper,drop your email below to get daily update about us
+                </p>
+                <div class="section6-1">
+                    <input class="btn-input" type="text" placeholder="Enter your email addres">
+                    <button class="section6-2">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <p>Subscribe</p>
+                    </button>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" class="section-7">
+                <div class="section7-1">
+                    <div class="section7-2">
+                        <img src="./img/Vector.png" alt="">
+                        <p>Zone.</p>
+                    </div>
+                    <div class="section7-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Dhaka, Bangladesh</p>
+                    </div>
+                    <div class="section7-4">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <p>0943833399</p>
+                    </div>
+
+                    <div class="section7-5">
+                        <i class="fa-solid fa-message"></i>
+                        <p>support@zone.com</p>
+                    </div>
+
+                    <div class="section7-6">
+                        <div class="section7-7">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="section7-7">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="section7-7">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="section7-7">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-8">
+                    <p>Service</p>
+                    <p>Order Management</p>
+                    <p>Social Assistant</p>
+                    <p>Crypto Platform</p>
+                    <p>Analyzer of the News</p>
+                </div>
+
+                <div class="section-9">
+                    <p>Company</p>
+                    <p>About Us</p>
+                    <p>News</p>
+                    <p>Our trusted partner</p>
+                    <p>New users FAQ</p>
+                </div>
+                <div class="section-10">
+                    <p>Supports</p>
+                    <p>Help center</p>
+                    <p>Feedbcak</p>
+                    <p>Contact us</p>
+                    <p>Terms conditins</p>
+                </div>
+                <div class="section-11">
+                    <p>Resources</p>
+                    <p>Download app</p>
+                    <p>Blog</p>
+                    <p>What’s new</p>
+                    <p>Sitemap</p>
+                </div>
+
+            </div>
+           
+            <hr>
+            <br>
+
+            <div class="project-footer">
+                <p>© 2022 Zone. - All rights reserved.</p>
+                <div>
+                    <p>Privacy</p>
+                    <p>Security</p>
+                    <p>Terms</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="./main.js"></script>
+    <script src="./loader/loder.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

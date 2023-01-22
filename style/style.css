@@ -1,0 +1,740 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+* {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white !important;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #111827;
+}
+
+.active {
+  height: auto !important;
+  transition: 0.8s;
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+  display: block !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.katta {
+  max-width: 1349px;
+  margin: 0 auto;
+  position: relative;
+}
+.katta .container {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+@media (max-width: 1200px) {
+  .katta .container {
+    padding: 0 10px;
+  }
+}
+.katta .container .wrapper .for-navbar {
+  color: white;
+  padding: 20px 0;
+}
+.katta .container .wrapper .for-navbar .navbar {
+  max-width: 1250px;
+  padding: 10px 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 760px) {
+  .katta .container .wrapper .for-navbar .navbar {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
+.katta .container .wrapper .for-navbar .navbar .my {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 760px) {
+  .katta .container .wrapper .for-navbar .navbar .my {
+    width: 100%;
+  }
+}
+.katta .container .wrapper .for-navbar .navbar .my .logo {
+  font-size: 18px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.katta .container .wrapper .for-navbar .navbar .my .logo img {
+  width: 40px;
+  padding-right: 5px;
+}
+.katta .container .wrapper .for-navbar .navbar .my .logo span {
+  font-size: 30px;
+  font-family: "Rubik";
+}
+.katta .container .wrapper .for-navbar .navbar .my #myMenuIcon {
+  font-size: 25px;
+  display: none;
+}
+@media (max-width: 760px) {
+  .katta .container .wrapper .for-navbar .navbar .my #myMenuIcon {
+    display: block;
+  }
+}
+.katta .container .wrapper .for-navbar .navbar #myList {
+  transition: 0.5s ease-in;
+}
+@media (max-width: 760px) {
+  .katta .container .wrapper .for-navbar .navbar #myList {
+    display: block !important;
+    list-style: none;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+}
+.katta .container .wrapper .for-navbar .navbar #myList li {
+  display: inline-block;
+  text-align: center;
+  margin-left: 25px;
+  vertical-align: middle;
+}
+@media (max-width: 760px) {
+  .katta .container .wrapper .for-navbar .navbar #myList li {
+    display: block;
+    padding: 10px 0;
+    cursor: pointer;
+    vertical-align: middle;
+    align-items: center;
+    margin: 30px auto;
+    width: 180px;
+    border-radius: 30px;
+    border: 2px solid #35a22c;
+  }
+}
+.katta .container .wrapper .for-navbar .navbar #myList li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.katta .container .wrapper .for-navbar .navbar #myList li a::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  z-index: -1;
+  transition: 0.09s ease-in !important;
+}
+.katta .container .wrapper .for-navbar .navbar #myList li a:hover::before {
+  width: 100%;
+}
+@media (max-width: 760px) {
+  .katta .container .wrapper .for-navbar .navbar #myList li:hover {
+    transition: 0.4s;
+    box-shadow: 2px 2px 50px 6px #35a22c;
+    background-color: #35a22c;
+  }
+}
+@media (max-width: 760px) {
+  .katta .container .wrapper .for-navbar .navbar #myList .li:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+    margin: 35px auto;
+    box-shadow: 2px 2px 50px 6px #35a22c;
+    background-color: #35a22c;
+  }
+}
+.katta .container .wrapper .for-navbar .navbar #myList #btnContact {
+  padding: 12px 24px;
+  margin: 0 0 0 10px;
+  background: linear-gradient(90.35deg, rgba(39, 87, 192, 0.6980392157) 0.36%, #d457e7 201.02%);
+  border-radius: 5px;
+  color: white;
+  border: none;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+.katta .container .wrapper .for-navbar .navbar #myList #btnContact:active {
+  transform: scale(0.9);
+}
+@media (max-width: 760px) {
+  .katta .container .wrapper .for-navbar .navbar #myList #btnContact {
+    display: none;
+  }
+}
+.katta .container .section-1 {
+  max-width: 1200px;
+  margin-top: 15px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+@media (max-width: 760px) {
+  .katta .container .section-1 {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+}
+.katta .container .section-1 .item-1 .item1-1 h1 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  letter-spacing: 0.02em;
+  background: linear-gradient(89.83deg, #2563EB 0.11%, #D946EF 58.65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0;
+  margin: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+}
+@media (max-width: 1000px) {
+  .katta .container .section-1 .item-1 .item1-1 h1 {
+    font-size: 45px;
+    font-weight: 900;
+  }
+}
+@media (max-width: 480px) {
+  .katta .container .section-1 .item-1 .item1-1 h1 {
+    font-size: 35px;
+  }
+}
+.katta .container .section-1 p {
+  padding: 20px 0;
+}
+.katta .container .section-1 .item1-2 {
+  position: relative;
+}
+@media (max-width: 760px) {
+  .katta .container .section-1 .item1-2 {
+    margin: 0 auto;
+  }
+}
+.katta .container .section-1 .item1-2 .btn2 {
+  background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+  border-radius: 6px;
+  display: flex;
+  align-items: flex-start;
+  padding: 15px 35px;
+  border: none;
+}
+@media (max-width: 760px) {
+  .katta .container .section-1 .item1-2 .btn2 {
+    margin: 0 auto;
+  }
+}
+.katta .container .section-1 .item1-2 .btn2:active {
+  transform: scale(0.9);
+}
+.katta .container .section-1 .item-2 img {
+  width: 100%;
+}
+@media (min-width: 300px) and (max-width: 760px) {
+  .katta .container .section-1 .item-2 img {
+    margin: 0 auto;
+    transform: translateX(0);
+  }
+}
+@media (min-width: 500px) and (max-width: 760px) {
+  .katta .container .section-1 .item-2 img {
+    margin: 0 auto;
+    transform: translateX(0);
+  }
+}
+.katta .container .section-2 .section2-2 {
+  text-align: center;
+}
+.katta .container .section-2 .section2-2 h1 {
+  padding: 20px;
+  font-size: 50px;
+  font-family: "DM Sans";
+}
+.katta .container .section-2 .section2-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 40px 0;
+}
+@media (max-width: 850px) {
+  .katta .container .section-2 .section2-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 550px) {
+  .katta .container .section-2 .section2-3 {
+    grid-template-columns: 1fr;
+  }
+}
+.katta .container .section-2 .section2-3 .section2-4 {
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 34px;
+  background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+  box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+}
+.katta .container .section-2 .section2-3 .section2-4 .circlee {
+  width: 74px;
+  height: 74px;
+  margin: 10px auto;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #8A7FD9 0%, #402F8F 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.katta .container .section-2 .section2-3 .section2-4 .circlee i {
+  font-size: 30px;
+}
+.katta .container .section-2 .section2-3 .section2-4 h2 {
+  padding: 10px 0;
+}
+.katta .container .section-2 .section2-3 .section2-4 .circle-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+.katta .container .section-2 .section2-3 .section2-4 .circle-footer p {
+  padding: 0 10px 0 0;
+}
+.katta .container .section-2 .section2-3 .section2-4:hover {
+  transform: translateY(-15px);
+}
+.katta .container .section-2 .section2-3 .section2-4:nth-child(2) .circlee {
+  background: linear-gradient(180deg, #D97F95 0%, #923250 100%);
+}
+.katta .container .section-2 .section2-3 .section2-4:nth-child(3) .circlee {
+  background: linear-gradient(180deg, #84D8ED 0%, #4292BB 100%);
+}
+.katta .container .section-2 .section2-3 .section2-4:nth-child(4) .circlee {
+  background: linear-gradient(180deg, #92EFC3 0%, #2F8F5B 100%);
+}
+.katta .container .section-2 .section2-3 .section2-4:nth-child(5) .circlee {
+  background: linear-gradient(180deg, #BC7FD9 0%, #923283 100%);
+}
+.katta .container .section-2 .section2-3 .section2-4:nth-child(5) .circlee {
+  background: linear-gradient(180deg, #BC7FD9 0%, #923283 100%);
+}
+.katta .container .section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 50px 0;
+}
+@media (max-width: 760px) {
+  .katta .container .section-3 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.katta .container .section-3 .section3-1 {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 760px) {
+  .katta .container .section-3 .section3-1 {
+    width: 100%;
+  }
+}
+.katta .container .section-3 .section3-1 img {
+  width: 100%;
+}
+.katta .container .section-3 .section3-2 {
+  width: 100%;
+}
+.katta .container .section-3 .section3-2 h2 {
+  font-size: 40px;
+}
+@media (max-width: 1000px) {
+  .katta .container .section-3 .section3-2 h2 {
+    font-size: 30px;
+  }
+}
+.katta .container .section-3 .section3-2 p {
+  padding: 40px 0;
+  font-size: 19px;
+}
+@media (max-width: 1000px) {
+  .katta .container .section-3 .section3-2 p {
+    font-size: 17px;
+  }
+}
+.katta .container .section-3 .section3-2 .btn3 {
+  background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px 35px;
+  border: none;
+}
+@media (max-width: 1000px) {
+  .katta .container .section-3 .section3-2 .btn3 {
+    margin: 0 auto;
+  }
+}
+.katta .container .section-3 .section3-2 .btn3:active {
+  transform: scale(0.9);
+}
+.katta .container .section-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 50px 0;
+}
+@media (max-width: 760px) {
+  .katta .container .section-4 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+.katta .container .section-4 .section4-2 {
+  width: 100%;
+}
+.katta .container .section-4 .section4-2 h2 {
+  font-size: 40px;
+}
+@media (max-width: 1000px) {
+  .katta .container .section-4 .section4-2 h2 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+}
+.katta .container .section-4 .section4-2 p {
+  padding: 40px 0;
+  font-size: 19px;
+}
+@media (max-width: 1000px) {
+  .katta .container .section-4 .section4-2 p {
+    font-size: 17px;
+  }
+}
+.katta .container .section-4 .section4-2 .btn3 {
+  background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px 35px;
+  border: none;
+}
+.katta .container .section-4 .section4-2 .btn3:active {
+  transform: scale(0.9);
+}
+@media (max-width: 1000px) {
+  .katta .container .section-4 .section4-2 .btn3 {
+    margin: 0 auto;
+  }
+}
+.katta .container .section-4 .section4-1 {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 760px) {
+  .katta .container .section-4 .section4-1 {
+    width: 100%;
+  }
+}
+.katta .container .section-4 .section4-1 img {
+  width: 100%;
+}
+.katta .container .section-5 {
+  margin: 100px 0;
+}
+.katta .container .section-5 .section5-1 {
+  text-align: center;
+  margin: 50px 0;
+}
+.katta .container .section-5 .section5-1 h2 {
+  font-size: 60px;
+  padding: 0 0 20px 0;
+}
+@media (max-width: 480px) {
+  .katta .container .section-5 .section5-1 h2 {
+    font-size: 40px;
+  }
+}
+.katta .container .section-5 .section5-1 p {
+  font: 25px sans-serif;
+}
+@media (max-width: 480px) {
+  .katta .container .section-5 .section5-1 p {
+    font-size: 20px;
+  }
+}
+.katta .container .section-5 .section5-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+@media (max-width: 1000px) {
+  .katta .container .section-5 .section5-2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .katta .container .section-5 .section5-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .katta .container .section-5 .section5-2 {
+    grid-template-columns: 1fr;
+  }
+}
+.katta .container .section-5 .section5-2 .section5-3 {
+  background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+  text-align: center;
+  box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+  border-radius: 34px;
+}
+.katta .container .section-5 .section5-2 .section5-3 img {
+  padding: 30px 0 0 0;
+}
+.katta .container .section-5 .section5-2 .section5-3 h2 {
+  font-size: 30px;
+}
+.katta .container .section-5 .section5-2 .section5-3 p {
+  font-size: 18px;
+}
+.katta .container .section-5 .section5-2 .section5-3 .section5-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.katta .container .section-5 .section5-2 .section5-3 .section5-footer .round {
+  width: 30px;
+  height: 30px;
+  background-color: #2563EB;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 5px 30px 0;
+}
+.katta .container .section-5 .section5-2 .section5-3:hover {
+  transform: translateY(-15px);
+}
+.katta .container .section-6 {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, rgba(254, 254, 255, 0.0145) 0%, rgba(255, 255, 255, 0.02) 100%);
+  box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+  border-radius: 34px;
+  text-align: center;
+  padding: 20px;
+}
+.katta .container .section-6 h2 {
+  font-size: 42px;
+}
+@media (max-width: 800px) {
+  .katta .container .section-6 h2 {
+    font-size: 30px;
+  }
+}
+.katta .container .section-6 p {
+  font-size: 16px;
+}
+.katta .container .section-6 .section6-1 {
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(254, 254, 255, 0.0348) 0%, rgba(255, 255, 255, 0.048) 100%);
+  box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.07);
+  border-radius: 70px;
+  padding: 10px 10px 10px 30px;
+}
+@media (max-width: 700px) {
+  .katta .container .section-6 .section6-1 {
+    width: 100%;
+  }
+}
+.katta .container .section-6 .section6-1 .btn-input {
+  width: 77%;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+@media (max-width: 700px) {
+  .katta .container .section-6 .section6-1 .btn-input {
+    height: 30px;
+    font-size: 12px;
+  }
+}
+.katta .container .section-6 .section6-1 .section6-2 {
+  background-color: #35a22c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+  opacity: 0.9;
+  border: none;
+  border-radius: 70px;
+}
+@media (max-width: 700px) {
+  .katta .container .section-6 .section6-1 .section6-2 {
+    padding: 10px 15px;
+  }
+}
+.katta .container .section-6 .section6-1 .section6-2 i {
+  font-size: 17px;
+  padding: 0 10px 0 0;
+}
+@media (max-width: 700px) {
+  .katta .container .section-6 .section6-1 .section6-2 i {
+    padding: 0 5px 0 0;
+    font-size: 12px;
+  }
+}
+.katta .container .section-6 .section6-1 .section6-2 p {
+  font-size: 20px;
+}
+@media (max-width: 700px) {
+  .katta .container .section-6 .section6-1 .section6-2 p {
+    font-size: 12px;
+  }
+}
+.katta .container .section-7 {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0 50px 0;
+}
+@media (max-width: 800px) {
+  .katta .container .section-7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 550px) {
+  .katta .container .section-7 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.katta .container .section-7 .section7-1 .section7-2 {
+  display: flex;
+}
+.katta .container .section-7 .section7-1 .section7-2 img {
+  width: 40px;
+  height: 40px;
+}
+.katta .container .section-7 .section7-1 .section7-2 p {
+  font-size: 30px;
+  padding: 10px 0 0 10px;
+}
+.katta .container .section-7 .section7-1 .section7-3 {
+  display: flex;
+  margin-top: 20px;
+}
+.katta .container .section-7 .section7-1 .section7-3 p {
+  padding: 0 0 0 10px;
+}
+.katta .container .section-7 .section7-1 .section7-4 {
+  display: flex;
+  margin: 10px 0;
+}
+.katta .container .section-7 .section7-1 .section7-4 p {
+  padding: 0 0 0 10px;
+}
+.katta .container .section-7 .section7-1 .section7-5 {
+  display: flex;
+}
+.katta .container .section-7 .section7-1 .section7-5 p {
+  padding: 0 0 0 10px;
+}
+.katta .container .section-7 .section7-1 .section7-6 {
+  margin: 20px 0 0 0;
+  display: flex;
+}
+.katta .container .section-7 .section7-1 .section7-6 .section7-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 15px;
+  margin-right: 10px;
+}
+.katta .container .section-7 .section-8 {
+  padding-top: 20px 0 0 0;
+  margin: 15px 0 0 0;
+}
+.katta .container .section-7 .section-8 p {
+  padding-top: 10px;
+}
+.katta .container .section-7 .section-9 {
+  padding-top: 20px 0 0 0;
+  margin-top: 15px;
+}
+.katta .container .section-7 .section-9 p {
+  padding-top: 10px;
+}
+.katta .container .section-7 .section-10 {
+  padding-top: 20px 0 0 0;
+  margin-top: 15px;
+}
+.katta .container .section-7 .section-10 p {
+  padding-top: 10px;
+}
+.katta .container .section-7 .section-11 {
+  padding-top: 20px 0 0 0;
+  margin-top: 15px;
+}
+.katta .container .section-7 .section-11 p {
+  padding-top: 10px;
+}
+.katta .container .project-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.katta .container .project-footer div {
+  display: flex;
+}
+.katta .container .project-footer div p {
+  padding-left: 20px;
+}
+@media (max-width: 450px) {
+  .katta .container .project-footer div {
+    padding-top: 15px;
+  }
+}
+@media (max-width: 450px) {
+  .katta .container .project-footer {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
